@@ -1,0 +1,63 @@
+<div class="col">
+  <div class="row m-3">
+    <div class="col-md-8 p-0">
+      <h1>Commande {{origin}}</h1>
+    </div>
+    <div class="col-md-4 m-0 p-0 text-end">
+      <div>
+        <app-action-buttons
+          (clickEvent)="newOrder()"
+        ></app-action-buttons>
+      </div>
+    </div>
+  </div>
+  <div class="col m-3">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="col-md-12">
+               <app-customer-supplier-order-details></app-customer-supplier-order-details>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"
+             style="max-height: 300px; overflow-y: scroll">
+          <div class="accordion-body">
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+            <app-customer-supplier-order></app-customer-supplier-order>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-md-6 text-start">
+              <h5>12 articles commandés</h5>
+            </div>
+            <div class="col-md-6 text-end">
+              <h5>Totale commande: 342,00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-md-12 text-center">
+      <app-pagination></app-pagination>
+    </div>
+  </div>
+</div>
+

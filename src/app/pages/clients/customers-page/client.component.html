@@ -1,0 +1,26 @@
+<div class="col">
+  <div class="row m-3">
+    <div class="col-md-8 p-0">
+      <h1>Liste des Clients</h1>
+    </div>
+    <div class="col-md-4 m-0 p-0 text-end">
+      <div>
+        <app-action-buttons
+          (clickEvent)="newClient()"
+        ></app-action-buttons>
+      </div>
+    </div>
+  </div>
+  <div class="col m-3">
+    <app-supplier-customer-detail></app-supplier-customer-detail>
+    <app-supplier-customer-detail></app-supplier-customer-detail>
+    <app-supplier-customer-detail></app-supplier-customer-detail>
+    <app-supplier-customer-detail></app-supplier-customer-detail>
+  </div>
+  <div class="row mb-3">
+    <div class="col-md-12 text-center">
+      <app-pagination></app-pagination>
+    </div>
+  </div>
+</div>
+

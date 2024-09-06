@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div class="row min-height no-flex-wrap">
+    <div class="card  col-md-2 me-2 p-0">
+      <div class="col p-0 m-2">
+        <div class="card border-none text-center">
+          <h5>Gestion de Magasin</h5>
+        </div>
+        <div>
+          <app-menu></app-menu>
+        </div>
+      </div>
+    </div>
+    <div class="card col-md-10 p-0 backgroung-grey border-none">
+      <div class="col p-0 d-flex flex-column justify-content-between">
+        <div class="card ps-3 pt-3 mb-2 min-height-80">
+         <app-header></app-header>
+        </div>
+        <div class="card mb-2" style="min-height: 700px">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="card min-height-80">
+          Footer
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
